@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: auto;
+    font-family: 'Courgette' !important;
+    perspective: 700px;
+}
+.image{
+    width: 100vw;
+    height: 90vh;
+    background-image: url(../images/46830bb24a27f0e73b01bc730aab393a.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;
+    padding: 0;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.title{
+    position: absolute;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -80%);
+}
+
+.main-title{
+    color: #fff;
+    font-size: 45px;
+    display: inline-block;
+}
+.icon1{
+    font-size: 50px;
+    padding-left: 50px;
+}
+.main-text{
+    color: #fff;
+    font-size: 22px;
+    text-align: center;
+}
+.main-text2{
+    color: #fff;
+    font-size: 35px;
+}
+.main-link{
+    font-size: 22px;
+    opacity: .8;
+    text-decoration: underline;
+    margin-left: 100px;
+}
+.about-img:hover{
+    transform: scale(1.1 , 1.1);
+}
+.title-animation:hover{
+    transform: rotateY(30deg);
+}
+.service-list li{
+    margin-left: 30px;
+    display: inline-block;
+    /* color: brown; */
+    font-size: 20px;
+}
+.service-list li i {
+    display: block;
+    color: #000;
+}
+.service-list{
+    margin-top: 25px;
+    text-align: center;
+}
+.service-list li a {
+    font-size: 20px;
+   color: rgb(120, 51, 51);
+}
+.card1{
+    position: relative;
+
+    animation-name: change;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+}
+@keyframes change{
+    0%{
+        top: 0;
+       left: 0;
+    }
+    50%{
+        transform: rotateY(90deg);
+    }
+    
+    100%{
+        top: 0;
+        left:0px;
+    }
+}
+.card1:hover{
+    animation-play-state: paused;
+}
+#content{
+    width:500px ;
+    height: 125px;
+    color: #fff;
+    border-radius: 15px;
+    background: -webkit-linear-gradient(top left ,#252525 , #652525 );
+    position: relative;
+    animation-name: change2;
+    animation-duration: 1s;
+    transform-style: preserve-3d;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+    display: none;
+}
+@keyframes change2{
+    0%{
+        top: 0;
+        left: 0;
+    }
+    50%{
+        transform: rotatey(180deg);
+
+    }
+    100%{
+        top: 0;
+        left: 0;
+    }
+}
+
+.btn2{
+    margin-left: 620px;
+    font-style: oblique;
+    background: -webkit-linear-gradient(top left ,#272121 , #443737 );
+    color: #fff;
+    border-radius: 7px;
+    animation-name: btn;
+    animation-duration: 2s;
+    transform-style: preserve-3d;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    position: relative;
+    display: none;
+    animation-delay: 2s ;
+}
+@keyframes btn{
+    0%{
+        top: 0;
+       left: 0;
+    }
+    50%{
+        transform: scale(1.2,1.1);
+    }
+    
+    100%{
+        top: 0;
+        left:0px;
+    }
+}
+#total-price{
+    width: 160px;
+    height: 40px;
+    background: -webkit-linear-gradient(top left ,#272121 , #443737 );
+    color: #fff;
+    margin-left: 750px;
+    margin-top: 10px;
+    text-align: center;
+    display: none;
+    position: relative;
+    animation-name: price;
+    animation-duration: 2s;
+}
+@keyframes price{
+    0%{
+        top: 0;
+        left: 0;
+    }
+    50%{
+        top: 50px;
+        left: 400px;
+    }
+    100%{
+        top: 0;
+        left: 0;
+        transform: rotateY(360deg);
+    }
+}
+.list li , .list3 li{
+    display: inline-block;
+}
+.btn3{
+    font-style: oblique;
+    background: -webkit-linear-gradient(top left ,#272121 , #443737 );
+    color: #fff;
+    border-radius: 7px;
+}
+.apple-list li {
+    display: inline-block;
+    margin: 0 5px;
+}
+.apple-list{
+    text-align: center;
+}
+.apple-list li i{
+    font-size: 20px;
+}
+.apple-list li a{
+    display: block;
+    font-size: 13px;
+    color: #000;
+}
+/* /////// */
+.list-item1 li a , .list-item2 li a, .list-item3 li a{
+    color: #555;
+    font-size: 14px;
+}
